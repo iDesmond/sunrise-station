@@ -359,7 +359,7 @@
     autoRechargePauseTime: 9
   - type: EnergyDomeGenerator
     damageEnergyDraw: 1
-    domePrototype: EnergyDomeSmallPink
+    domePrototype: EnergyDomeCult
   - type: UseDelay
     delay: 10.0
   # Sunrise-End
