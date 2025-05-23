@@ -379,14 +379,15 @@ namespace Content.Server.Lathe
 
                 if (!_proto.TryIndex(recipeId, out LatheRecipePrototype? recipe))
                     continue;
-
+                //Sunrise-Edit-Start
                 //var itemName = GetRecipeName(recipe!);
                 //recipeNames.Add(Loc.GetString("lathe-unlock-recipe-radio-broadcast-item", ("item", itemName)));
+                //Sunrise-Edit-End
             }
 
             if (recipeNames.Count == 0)
                 return;
-
+            //Sunrise-Edit-Start
             /*var message =
                 recipeNames.Count > ent.Comp.MaximumItems ?
                     Loc.GetString(
@@ -403,6 +404,7 @@ namespace Content.Server.Lathe
             {
                 _radio.SendRadioMessage(ent.Owner, message, channel, ent.Owner, escapeMarkup: false);
             }*/
+            //Sunrise-Edit-End
         }
 
         private void OnResearchRegistrationChanged(EntityUid uid, LatheComponent component, ref ResearchRegistrationChangedEvent args)
